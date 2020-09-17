@@ -12,41 +12,13 @@ const GridExample = () => {
     ];
 
     const columnDefs = [{
-      headerName: "Make",
       cellRenderer: "agGroupCellRenderer",
       field: "make"
     }, {
-      headerName: "Model",
       field: "model"
     }, {
-      headerName: "Price",
       field: "price"
     }];
-
-    var gridOptions = {
-      defaultColDef: {
-        flex: 1,
-      },
-      masterDetail: true,
-      detailCellRendererParams: {
-        detailGridOptions: {
-          columnDefs: [
-            { field: 'callId' },
-            { field: 'direction' },
-          ],
-          defaultColDef: {
-            flex: 1,
-          },
-        },
-        getDetailRowData: function (params) {
-          console.log(params);
-          params.successCallback([{
-            callId: "Foobar",
-            direction: "North"
-          }]);
-        },
-      },
-    };
 
     return (
 
@@ -54,8 +26,6 @@ const GridExample = () => {
             <AgGridReact
                 columnDefs={columnDefs}
                 rowData={rowData()}
-                masterDetail={true}
-                {...gridOptions}
                 >
             </AgGridReact>
         </div>
@@ -63,3 +33,4 @@ const GridExample = () => {
 };
 
 export default GridExample;
+
