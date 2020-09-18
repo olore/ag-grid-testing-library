@@ -32,7 +32,6 @@ const GridExample = () => {
         }
         pagination={true}
         onGridReady={() => setIsGridReady(true)}
-
       >
       </AgGridReact>
       { isGridReady && <div data-testid="grid-is-ready"></div>}
