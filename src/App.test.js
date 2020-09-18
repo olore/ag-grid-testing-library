@@ -7,10 +7,10 @@ describe("the tests", () => {
   describe("headers", () => {
     test('renders all the headers', async () => {
       const { getByText } = render(<GridExample />);
-      expect(getByText("Make")).toBeInTheDocument();
-      expect(getByText("Model")).toBeInTheDocument();
-      expect(getByText("Price")).toBeInTheDocument();
-      expect(getByText("Color")).toBeInTheDocument();
+      expect(getByText("Make")).toBeInTheDocument();  // PASS
+      expect(getByText("Model")).toBeInTheDocument(); // PASS
+      expect(getByText("Price")).toBeInTheDocument(); // FAIL
+      expect(getByText("Color")).toBeInTheDocument(); // FAIL
     });
   });
 
