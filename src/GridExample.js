@@ -1,6 +1,6 @@
 import React from 'react';
 import { AgGridReact } from 'ag-grid-react';
-import 'ag-grid-enterprise';
+import 'ag-grid-community';
 import 'ag-grid-community/dist/styles/ag-grid.css';
 import 'ag-grid-community/dist/styles/ag-theme-alpine.css';
 
@@ -12,13 +12,14 @@ const GridExample = () => {
   ];
 
   // It seems only the first 2 cols are findable
-  // no matter how I change the fields, looking for the 3rd/4th in a test fails
+  // no matter how I change the fields, 
+  // looking for the 3rd/4th in a test fails
   const columnDefs = [{
+    field: "make"        // This field is findable
+  }, {
     field: "model"        // This field is findable
   }, {
-    field: "price"        // This field is findable
-  }, {
-    field: "make"         // This field is NOT findable
+    field: "price"         // This field is NOT findable
   // }, {
   //   field: "color"        // This field is NOT findable
   }];
