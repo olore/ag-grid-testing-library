@@ -8,7 +8,8 @@ const GridExample = () => {
   const rowData = () => [
     { make: "Toyota", model: "Celica", price: 35000, color: "blue" },
     { make: "Ford", model: "Mondeo", price: 32000, color: "red" },
-    { make: "Porsche", model: "Boxter", price: 72000, color: "black" }
+    { make: "Porsche", model: "Boxter", price: 72000, color: "black" },
+    { make: "Volvo", model: "Wagon", price: 172000, color: "pink" }
   ];
 
   // It seems only the first 2 cols are findable
