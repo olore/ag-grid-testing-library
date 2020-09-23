@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^12.1.6",
     "ag-grid-community": "^24.0.0",
     "ag-grid-react": "^24.0.0",
+    "jest-environment-jsdom-sixteen": "^1.0.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3"
@@ -15,7 +16,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "DEBUG_PRINT_LIMIT=9999999999 react-scripts test --env=jsdom-fourteen",
+    "test": "DEBUG_PRINT_LIMIT=9999999999 react-scripts test --env=jsdom-sixteen",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -32,8 +33,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "jest-environment-jsdom-fourteen": "^1.0.1"
   }
 }
