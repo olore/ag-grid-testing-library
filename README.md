@@ -1,3 +1,7 @@
+# UPDATE: Fixed with https://github.com/olore/ag-grid-testing-library/commit/07357b611a62f735a7b5df5168cfb36ba96300bc
+ * See also https://stackoverflow.com/q/63969843/1691
+
+
 # Help me fix this problem
 
 ```
