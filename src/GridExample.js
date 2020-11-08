@@ -6,14 +6,12 @@ import 'ag-grid-community/dist/styles/ag-theme-alpine.css';
 
 const GridExample = () => {
 
-  // NOTE: adding `cellRenderer: "agGroupCellRenderer",` 
-  //       to any field makes it not findable
-
   return (
 
     <div className="ag-theme-alpine" style={{ height: '300px', width: '800px' }}>
       <AgGridReact
-        columnDefs={ /* First 2 always findable, others never */
+        suppressColumnVirtualisation={process.env.NODE_ENV === "test"}
+        columnDefs={
           [
             { field: "make" }, 
             { field: "model" }, 

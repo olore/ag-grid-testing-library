@@ -9,8 +9,8 @@ describe("the tests", () => {
       const { getByText } = render(<GridExample />);
       expect(getByText("Make")).toBeInTheDocument();  // PASS
       expect(getByText("Model")).toBeInTheDocument(); // PASS
-      expect(getByText("Price")).toBeInTheDocument(); // FAIL
-      expect(getByText("Color")).toBeInTheDocument(); // FAIL
+      expect(getByText("Price")).toBeInTheDocument(); // PASS
+      expect(getByText("Color")).toBeInTheDocument(); // PASS
     });
   });
 
